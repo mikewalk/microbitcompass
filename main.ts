@@ -1,4 +1,7 @@
 let Pointing = 0
+input.onButtonPressed(Button.AB, function () {
+    input.calibrateCompass()
+})
 basic.forever(function () {
     Pointing = input.compassHeading()
     if (Pointing == -1003) {
